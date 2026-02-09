@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DEV-{####}",
+ "creation": "2025-12-20 09:59:52.163808",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "c_name",
+  "d_type",
+  "brand",
+  "model",
+  "s_num",
+  "d_con"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Repair Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.c_name",
+   "fieldname": "c_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "d_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Device Type",
+   "options": "Mobile Phone\nTablet\nLaptop\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Brand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "s_num",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "d_con",
+   "fieldtype": "Small Text",
+   "label": "Device Condition"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-20 12:16:46.939346",
+ "modified_by": "Administrator",
+ "module": "Repair System",
+ "name": "Repair Device",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

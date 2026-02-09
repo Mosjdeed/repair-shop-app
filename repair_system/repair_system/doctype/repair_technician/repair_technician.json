@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TECH-{####}",
+ "creation": "2025-12-20 10:05:17.852576",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "t_name",
+  "phone",
+  "email",
+  "specialization",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "t_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Technician Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Specialization",
+   "options": "Mobile Phone\nTablet\nLaptop\nAll",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Available\nBusy\nOn Leave",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-20 10:53:38.806002",
+ "modified_by": "Administrator",
+ "module": "Repair System",
+ "name": "Repair Technician",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
