@@ -1,41 +1,44 @@
-### Repair System
+# 🔧 Repair System
 
-Device Repair Management System
+Device Repair Management System built on Frappe Framework
 
-### Installation
+## 📋 Description
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+A complete management system for mobile and electronics repair shops, including:
+- Customer Management
+- Device Management
+- Repair Orders Management
+- Technician Management
+
+## ✨ Features
+
+- 👥 **Customer Management** - Register customer data and repair history
+- 📱 **Device Management** - Track devices and their status
+- 📝 **Repair Orders** - Create and track repair requests
+- 👨‍🔧 **Technician Management** - Assign tasks to technicians
+
+## 🛠️ Installation
 
 ```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app repair_system
+cd ~/frappe-bench
+bench get-app https://github.com/Mosjdeed/repair-shop-app.git
+bench --site your-site install-app repair_system
 ```
 
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/repair_system
-pre-commit install
+## Usage
 ```
+bench start
+```
+Then open your browser at: http://localhost:8000
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+## App Structure
+repair_system/
+├── repair_system/
+│   └── doctype/
+│       ├── repair_customer/     # Customers
+│       ├── repair_device/       # Devices
+│       ├── repair_order/        # Repair Orders
+│       └── repair_technician/   # Technicians
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### CI
-
-This app can use GitHub Actions for CI. The following workflows are configured:
-
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
-
-
-### License
-
-mit
+## 📄 License
+MIT License - See LICENSE file
